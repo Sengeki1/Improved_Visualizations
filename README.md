@@ -20,6 +20,7 @@ Implication: People will underestimate Democratic support because high-populatio
 
 ![alt text](<exports/2016 Election.png>)
 
+---
 
 ![alt text](image-1.png)
 
