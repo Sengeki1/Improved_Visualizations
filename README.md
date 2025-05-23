@@ -1,6 +1,6 @@
 # Visualization with Flaws and Respective Corrections
 
-![alt text](image.png)
+![alt text](exports/image.png)
 
 1. Geographic Bias
 
@@ -18,7 +18,7 @@ Implication: People will underestimate Democratic support because high-populatio
 
 ## Correction:
 
-![alt text](<exports/2016 Election.png>)
+![alt text](exports/2016 Election.png)
 
 ---
 
