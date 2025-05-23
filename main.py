@@ -58,16 +58,31 @@ def main():
         print([col for col in pivot_data.columns if col not in ['state_fips', 'fips']])
 
     print(pivot_data)
-    fig = px.choropleth(pivot_data, 
-                    locations='state_abbr',
-                    color='margin',
-                    color_continuous_scale='RdBu_r',
-                    range_color=[-50, 50],
-                    locationmode='USA-states',
-                    hover_data=['state_abbr', 'total_votes'],
-                    title='2016 Presidential Election Results by State')
+    fig = px.choropleth(
+        pivot_data, 
+        locations='state_abbr',
+        color='margin',
+        color_continuous_scale='RdBu_r',
+        range_color=[-50, 50],
+        locationmode='USA-states',
+        hover_data=['state_abbr', 'total_votes'],
+        title='2016 Presidential Election Results by State')
 
-    fig.update_layout(geo_scope="usa")
+    fig.update_layout(
+        geo_scope="usa",
+        annotations=[
+            dict(
+                text="<b>Color Guide:</b><br>🔴 Red = Republican Majority<br>🔵 Blue = Democratic Majority<br>Darker colors = Larger margins",
+                showarrow=False,
+                xref="paper", yref="paper",
+                x=0.02, y=0.98,
+                xanchor="left", yanchor="top",
+                bgcolor="white",
+                bordercolor="black",
+                borderwidth=1,
+                font=dict(size=12)
+            )
+        ])
     fig.show()
 
     # SALARY 
