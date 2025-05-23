@@ -1,6 +1,6 @@
 # Visualization with Flaws and Respective Corrections
 
-![alt text](exports/image.png)
+![alt text](imports/image.png)
 
 1. Geographic Bias
 
@@ -18,11 +18,11 @@ Implication: People will underestimate Democratic support because high-populatio
 
 ## Correction:
 
-![alt text](exports/2016 Election.png)
+![alt text](<exports/2016 Election.png>)
 
 ---
 
-![alt text](image-1.png)
+![alt text](imports/image-1.png)
 
 Using a pie chart to represent salary ranges is misleading because pie charts imply exact proportions, not variable data.
 
